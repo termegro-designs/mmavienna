@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Vienna - T-Shirts Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="MMA Vienna Logo">
+        </a>
+        <a href="index.html" class="back-button">← Zurück zum Shop</a>
+    </nav>
+
+    <main class="shop-container">
+        <h1>MMA Vienna T-Shirts</h1>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://via.placeholder.com/500x500.png?text=T-Shirt+1" alt="MMA Vienna T-Shirt 1" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">MMA Vienna Classic Shirt</h2>
+                    <p class="product-price">€29.99</p>
+                    <div class="size-selector">
+                        <select>
+                            <option value="" disabled selected>Größe wählen</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn">In den Warenkorb</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://via.placeholder.com/500x500.png?text=T-Shirt+2" alt="MMA Vienna T-Shirt 2" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">MMA Vienna Pro Fighter</h2>
+                    <p class="product-price">€34.99</p>
+                    <div class="size-selector">
+                        <select>
+                            <option value="" disabled selected>Größe wählen</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn">In den Warenkorb</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="https://via.placeholder.com/500x500.png?text=T-Shirt+3" alt="MMA Vienna T-Shirt 3" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">MMA Vienna Performance</h2>
+                    <p class="product-price">€32.99</p>
+                    <div class="size-selector">
+                        <select>
+                            <option value="" disabled selected>Größe wählen</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                    <button class="add-to-cart-btn">In den Warenkorb</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Animate products on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const products = document.querySelectorAll('.product-card');
+            products.forEach((product, index) => {
+                product.style.opacity = '0';
+                product.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    product.style.transition = 'all 0.6s ease';
+                    product.style.opacity = '1';
+                    product.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+
+        // Add to cart animation
+        const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.add('added');
+                button.textContent = '✓ Hinzugefügt';
+                setTimeout(() => {
+                    button.classList.remove('added');
+                    button.textContent = 'In den Warenkorb';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html> 

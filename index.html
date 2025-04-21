@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Vienna - Full Screen Concept</title>
+    <meta name="description" content="MMA Vienna - Einzigartiges Kampfsporttraining in Wien.">
+    <!-- Google Fonts (Montserrat/Lato) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#hero" class="nav-link active" data-section="hero">START</a></li>
+            <li><a href="#angebot" class="nav-link" data-section="angebot">ANGEBOT</a></li>
+            <li><a href="#philosophie" class="nav-link" data-section="philosophie">PHILOSOPHIE</a></li>
+            <li><a href="#stundenplan" class="nav-link" data-section="stundenplan">STUNDENPLAN</a></li>
+            <li><a href="#trainer" class="nav-link" data-section="trainer">TRAINER</a></li>
+            <li><a href="#mitgliedschaften" class="nav-link" data-section="mitgliedschaften">MITGLIEDSCHAFTEN</a></li>
+            <li><a href="#kontakt" class="nav-link" data-section="kontakt">KONTAKT</a></li>
+            <li><a href="#shop" class="nav-link" data-section="shop">SHOP</a></li>
+        </ul>
+    </nav>
+
+    <main id="page-container">
+
+        <!-- Section 1: Hero -->
+        <section id="hero" class="page-section active" data-id="hero">
+            <div class="section-content">
+                <h1>Verlasse deine Komfortzone</h1>
+                <a href="#kontakt" class="cta-button section-internal-link" data-target="footer">Jetzt Probetraining buchen</a> 
+            </div>
+             <!-- Video Background will be added here later -->
+        </section>
+
+        <!-- Section 2: Trainingsangebot -->
+        <section id="angebot" class="page-section" data-id="angebot">
+            <div class="section-content content-left">
+                <h2>Unser Trainingsangebot</h2>
+                <p>Egal ob Anfänger oder Wettkämpfer, bei uns findest du das passende Training. Wir bieten ein breites Spektrum an Kampfkünsten, unterrichtet von erfahrenen Trainern in einer motivierenden Umgebung.</p>
+                
+                <div class="angebot-grid">
+                    <!-- Boxen Card -->
+                    <div class="angebot-card">
+                        <div class="angebot-image">
+                            <img src="images/boxen.png" alt="Boxen Training">
+                        </div>
+                        <div class="angebot-content">
+                            <h3>Boxen</h3>
+                            <p>Schärfe deine Reflexe, verbessere deine Schlagkraft und steigere deine Fitness mit unserem professionellen Boxtraining.</p>
+                        </div>
+                    </div>
+                    <!-- Muay Thai Card -->
+                    <div class="angebot-card">
+                        <div class="angebot-image">
+                            <img src="images/muay thai.png" alt="Muay Thai Training">
+                        </div>
+                        <div class="angebot-content">
+                            <h3>Muay Thai</h3>
+                            <p>Meistere die "Kunst der acht Gliedmaßen" mit Kicks, Schlägen, Knie- und Ellenbogentechniken in unserem authentischen Thaiboxtraining.</p>
+                        </div>
+                    </div>
+                    <!-- MMA Card -->
+                    <div class="angebot-card">
+                        <div class="angebot-image">
+                            <img src="images/mma.png" alt="MMA Training">
+                        </div>
+                        <div class="angebot-content">
+                            <h3>MMA</h3>
+                            <p>Kombiniere die effektivsten Techniken aus verschiedenen Kampfkünsten – Striking, Ringen und Bodenkampf – im Mixed Martial Arts Training.</p>
+                        </div>
+                    </div>
+                    <!-- BJJ/Grappling Card -->
+                    <div class="angebot-card">
+                        <div class="angebot-image">
+                            <img src="images/bjjgrappling.png" alt="BJJ und Grappling Training">
+                        </div>
+                        <div class="angebot-content">
+                            <h3>BJJ & Grappling</h3>
+                            <p>Lerne effektive Kontroll-, Positions- und Aufgabetechniken am Boden mit unserem Brazilian Jiu-Jitsu und Grappling Training.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Optional: Add background image/color -->
+        </section>
+
+        <!-- Section 3: Philosophie -->
+        <section id="philosophie" class="page-section" data-id="philosophie">
+            <div class="section-content content-right">
+                <h2>Unsere Philosophie</h2>
+                <p>MMA Vienna ist mehr als nur ein Gym – wir sind eine Gemeinschaft. Uns verbinden die Leidenschaft für den Kampfsport und die Werte Respekt, Disziplin und kontinuierliche Verbesserung. Wir fördern eine familiäre Atmosphäre, in der jeder willkommen ist und individuell unterstützt wird, seine persönlichen Ziele zu erreichen.</p>
+                 <a href="ueber-uns.html" class="cta-button-secondary">Lerne uns kennen</a>
+            </div>
+             <!-- Optional: Add background image/color -->
+        </section>
+
+        <!-- Section 4: Stundenplan -->
+        <section id="stundenplan" class="page-section" data-id="stundenplan">
+            <div class="section-content">
+                <h2>TRAININGSPLAN</h2>
+                <div class="schedule-grid">
+                    <div class="schedule-header">
+                        <div class="day-column">MONTAG</div>
+                        <div class="day-column">DIENSTAG</div>
+                        <div class="day-column">MITTWOCH</div>
+                        <div class="day-column">DONNERSTAG</div>
+                        <div class="day-column">FREITAG</div>
+                        <div class="day-column">SAMSTAG</div>
+                    </div>
+                    <div class="schedule-content">
+                        <!-- Morning Classes -->
+                        <div class="time-slot">
+                            <div class="class-box has-class" data-type="boxing" data-level="intermediate">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">06:30 - 07:30</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Intermediate</div>
+                                <div class="class-spots">12 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Intensives Boxtraining für Fortgeschrittene. 
+                                    Fokus auf Technik und Kondition.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="boxing" data-level="intermediate">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">06:30 - 07:30</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Intermediate</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Intensives Boxtraining für Fortgeschrittene. 
+                                    Fokus auf Technik und Kondition.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="mma" data-level="beginner">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="class-time">10:00 - 21:00</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-tooltip">
+                                    Freies Training mit Zugang zu allen Geräten und Bereichen.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mid-Morning Classes -->
+                        <div class="time-slot">
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="mma" data-level="beginner">
+                                <div class="class-name">MMA MORNING</div>
+                                <div class="class-time">10:00 - 11:00</div>
+                                <div class="class-trainer">Coach Islam</div>
+                                <div class="class-level">Beginner</div>
+                                <div class="class-spots">8 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Grundlagen des MMA für Einsteiger.
+                                    Kombiniert Stand- und Bodenkampf.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="mma" data-level="beginner">
+                                <div class="class-name">MMA MORNING</div>
+                                <div class="class-time">10:00 - 11:00</div>
+                                <div class="class-trainer">Coach Islam</div>
+                                <div class="class-level">Beginner</div>
+                                <div class="class-spots">8 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Grundlagen des MMA für Einsteiger.
+                                    Kombiniert Stand- und Bodenkampf.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="empty-slot"></div>
+                        </div>
+
+                        <!-- Afternoon Classes -->
+                        <div class="time-slot">
+                            <div class="class-box has-class" data-type="boxing" data-level="all">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">11:00 - 16:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">15 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Boxtraining für alle Levels.
+                                    Technik, Kondition und Sparring.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="boxing" data-level="all">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">11:00 - 16:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">15 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Boxtraining für alle Levels.
+                                    Technik, Kondition und Sparring.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="boxing" data-level="all">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">11:00 - 16:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">15 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Boxtraining für alle Levels.
+                                    Technik, Kondition und Sparring.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                        </div>
+
+                        <!-- Junior Classes -->
+                        <div class="time-slot">
+                            <div class="class-box has-class new-class" data-type="boxing" data-level="beginner">
+                                <div class="class-name">JUNIOREN STRIKING</div>
+                                <div class="class-time">16:30 - 17:45</div>
+                                <div class="class-trainer">Coach Omari</div>
+                                <div class="class-level">Beginner</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Spezielles Kampfsporttraining für Jugendliche.
+                                    Altersgerechtes Training mit Fokus auf Technik.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="mma" data-level="all">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="class-time">17:00 - 18:00</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-tooltip">
+                                    Freies Training mit Zugang zu allen Geräten.
+                                </div>
+                            </div>
+                            <div class="class-box has-class new-class" data-type="boxing" data-level="beginner">
+                                <div class="class-name">JUNIOREN STRIKING</div>
+                                <div class="class-time">16:30 - 17:45</div>
+                                <div class="class-trainer">Coach Omari</div>
+                                <div class="class-level">Beginner</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Spezielles Kampfsporttraining für Jugendliche.
+                                    Altersgerechtes Training mit Fokus auf Technik.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="mma" data-level="all">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="class-time">17:00 - 18:00</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-tooltip">
+                                    Freies Training mit Zugang zu allen Geräten.
+                                </div>
+                            </div>
+                            <div class="class-box has-class new-class" data-type="boxing" data-level="beginner">
+                                <div class="class-name">JUNIOREN STRIKING</div>
+                                <div class="class-time">16:30 - 17:45</div>
+                                <div class="class-trainer">Coach Omari</div>
+                                <div class="class-level">Beginner</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Spezielles Kampfsporttraining für Jugendliche.
+                                    Altersgerechtes Training mit Fokus auf Technik.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                        </div>
+
+                        <!-- Evening Classes -->
+                        <div class="time-slot">
+                            <div class="class-box has-class" data-type="muaythai" data-level="all">
+                                <div class="class-name">MUAY THAI</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">12 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Traditionelles Muay Thai Training.
+                                    Technik, Kombinationen und Sparring.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="boxing" data-level="intermediate">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Intermediate</div>
+                                <div class="class-spots">15 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Fortgeschrittenes Boxtraining mit Sparring.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="muaythai" data-level="all">
+                                <div class="class-name">MUAY THAI</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">12 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Traditionelles Muay Thai Training.
+                                    Technik, Kombinationen und Sparring.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="boxing" data-level="intermediate">
+                                <div class="class-name">BOXING</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Intermediate</div>
+                                <div class="class-spots">15 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Fortgeschrittenes Boxtraining mit Sparring.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="mma" data-level="all">
+                                <div class="class-name">OPEN GYM</div>
+                                <div class="class-time">18:00 - 19:30</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-tooltip">
+                                    Freies Training mit Zugang zu allen Geräten.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                        </div>
+
+                        <!-- Late Evening Classes -->
+                        <div class="time-slot">
+                            <div class="class-box has-class" data-type="mma" data-level="all">
+                                <div class="class-name">MMA</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Islam</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Mixed Martial Arts Training.
+                                    Stand- und Bodenkampf Kombinationen.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="grappling" data-level="all">
+                                <div class="class-name">GRAPPLING</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Shams</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">12 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    BJJ und Grappling Training.
+                                    Technik und Sparring am Boden.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="mma" data-level="all">
+                                <div class="class-name">MMA</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Islam</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Mixed Martial Arts Training.
+                                    Stand- und Bodenkampf Kombinationen.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="grappling" data-level="all">
+                                <div class="class-name">GRAPPLING</div>
+                                <div class="class-time">18:00 - 19:15</div>
+                                <div class="class-trainer">Coach Shams</div>
+                                <div class="class-level">Alle Level</div>
+                                <div class="class-spots">12 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    BJJ und Grappling Training.
+                                    Technik und Sparring am Boden.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="empty-slot"></div>
+                        </div>
+
+                        <!-- Night Classes -->
+                        <div class="time-slot">
+                            <div class="class-box has-class" data-type="muaythai" data-level="advanced">
+                                <div class="class-name">MUAY THAI</div>
+                                <div class="class-time">19:20 - 20:45</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Advanced</div>
+                                <div class="class-spots">8 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Fortgeschrittenes Muay Thai Training.
+                                    Intensives Sparring und Techniken.
+                                </div>
+                            </div>
+                            <div class="empty-slot"></div>
+                            <div class="class-box has-class" data-type="muaythai" data-level="advanced">
+                                <div class="class-name">MUAY THAI</div>
+                                <div class="class-time">19:20 - 20:45</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Advanced</div>
+                                <div class="class-spots">8 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Fortgeschrittenes Muay Thai Training.
+                                    Intensives Sparring und Techniken.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="mma" data-level="advanced">
+                                <div class="class-name">MMA SPARRING</div>
+                                <div class="class-time">19:20 - 20:45</div>
+                                <div class="class-trainer">Coach Islam</div>
+                                <div class="class-level">Advanced</div>
+                                <div class="class-spots">8 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Intensives MMA Sparring für Fortgeschrittene.
+                                    Nur mit Trainerfreigabe.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="muaythai" data-level="advanced">
+                                <div class="class-name">MUAY THAI</div>
+                                <div class="class-time">19:20 - 20:45</div>
+                                <div class="class-trainer">Coach Uvais</div>
+                                <div class="class-level">Advanced</div>
+                                <div class="class-spots">8 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Fortgeschrittenes Muay Thai Training.
+                                    Intensives Sparring und Techniken.
+                                </div>
+                            </div>
+                            <div class="class-box has-class" data-type="grappling" data-level="advanced">
+                                <div class="class-name">GRAPPLING</div>
+                                <div class="class-time">19:20 - 20:45</div>
+                                <div class="class-trainer">Coach Shams</div>
+                                <div class="class-level">Advanced</div>
+                                <div class="class-spots">10 Plätze frei</div>
+                                <div class="class-tooltip">
+                                    Fortgeschrittenes BJJ und Grappling.
+                                    Technik und Sparring.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Trainer -->
+        <section id="trainer" class="page-section trainers-section" data-id="trainer">
+            <div class="section-content">
+                <h2>UNSERE TRAINER</h2>
+                <div class="trainers-grid">
+                    <!-- Uvais -->
+                    <div class="trainer-card">
+                        <div class="trainer-specialty-icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <div class="trainer-image-wrapper">
+                            <img src="images/Uvais.png" alt="Uvais" class="trainer-image" onerror="this.src='https://images.unsplash.com/photo-1517438322307-e67111335449?w=800&h=1200&fit=crop'">
+                        </div>
+                        <div class="trainer-overlay">
+                            <h3 class="trainer-name">Uvais</h3>
+                            <div class="trainer-specialty">Muay Thai/K-1 & Boxen</div>
+                            <div class="trainer-bio">
+                                Professioneller Kampfsportler mit über 15 Jahren Erfahrung. Spezialisiert auf Muay Thai und westliches Boxen. Mehrfacher Titelträger im K-1 und Thaiboxen.
+                            </div>
+                            <div class="trainer-achievements">
+                                <span class="achievement-badge">K-1 Champion</span>
+                                <span class="achievement-badge">Pro Trainer</span>
+                                <span class="achievement-badge">15+ Jahre</span>
+                            </div>
+                            <div class="trainer-social">
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shams -->
+                    <div class="trainer-card">
+                        <div class="trainer-specialty-icon">
+                            <i class="fas fa-hand-rock"></i>
+                        </div>
+                        <div class="trainer-image-wrapper">
+                            <img src="images/Shams.png" alt="Shams" class="trainer-image" onerror="this.src='https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?w=800&h=1200&fit=crop'">
+                        </div>
+                        <div class="trainer-overlay">
+                            <h3 class="trainer-name">Shams</h3>
+                            <div class="trainer-specialty">BJJ & Grappling</div>
+                            <div class="trainer-bio">
+                                BJJ Schwarzgurt und erfahrener Grappling-Spezialist. Bekannt für seinen technischen Stil und die Fähigkeit, komplexe Techniken einfach zu vermitteln.
+                            </div>
+                            <div class="trainer-achievements">
+                                <span class="achievement-badge">BJJ Black Belt</span>
+                                <span class="achievement-badge">Grappling Expert</span>
+                                <span class="achievement-badge">10+ Jahre</span>
+                            </div>
+                            <div class="trainer-social">
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Omari -->
+                    <div class="trainer-card">
+                        <div class="trainer-specialty-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="trainer-image-wrapper">
+                            <img src="images/Omari.png" alt="Omari" class="trainer-image" onerror="this.src='https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?w=800&h=1200&fit=crop'">
+                        </div>
+                        <div class="trainer-overlay">
+                            <h3 class="trainer-name">Omari</h3>
+                            <div class="trainer-specialty">Juniors</div>
+                            <div class="trainer-bio">
+                                Spezialisiert auf Kinder- und Jugendtraining. Entwickelt maßgeschneiderte Programme, die Spaß und Technik perfekt verbinden.
+                            </div>
+                            <div class="trainer-achievements">
+                                <span class="achievement-badge">Kids Coach</span>
+                                <span class="achievement-badge">Pädagogik</span>
+                                <span class="achievement-badge">8+ Jahre</span>
+                            </div>
+                            <div class="trainer-social">
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Milosz -->
+                    <div class="trainer-card">
+                        <div class="trainer-specialty-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="trainer-image-wrapper">
+                            <img src="images/Milosz.png" alt="Milosz" class="trainer-image" onerror="this.src='https://images.unsplash.com/photo-1615117972428-28de67cda58e?w=800&h=1200&fit=crop'">
+                        </div>
+                        <div class="trainer-overlay">
+                            <h3 class="trainer-name">Milosz</h3>
+                            <div class="trainer-specialty">Kickboxing</div>
+                            <div class="trainer-bio">
+                                Dynamischer Kickboxing-Trainer mit Wettkampferfahrung. Bekannt für intensive Workouts und präzise Technikschulung.
+                            </div>
+                            <div class="trainer-achievements">
+                                <span class="achievement-badge">Pro Fighter</span>
+                                <span class="achievement-badge">Kickbox Expert</span>
+                                <span class="achievement-badge">12+ Jahre</span>
+                            </div>
+                            <div class="trainer-social">
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Islam -->
+                    <div class="trainer-card">
+                        <div class="trainer-specialty-icon">
+                            <i class="fas fa-khanda"></i>
+                        </div>
+                        <div class="trainer-image-wrapper">
+                            <img src="images/Islam.png" alt="Islam" class="trainer-image" onerror="this.src='https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&h=1200&fit=crop'">
+                        </div>
+                        <div class="trainer-overlay">
+                            <h3 class="trainer-name">Islam</h3>
+                            <div class="trainer-specialty">MMA</div>
+                            <div class="trainer-bio">
+                                MMA-Experte mit umfassender Erfahrung in verschiedenen Kampfstilen. Spezialisiert auf die Integration von Stand- und Bodenkampf.
+                            </div>
+                            <div class="trainer-achievements">
+                                <span class="achievement-badge">MMA Pro</span>
+                                <span class="achievement-badge">All-Round</span>
+                                <span class="achievement-badge">10+ Jahre</span>
+                            </div>
+                            <div class="trainer-social">
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="trainer-social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Mitgliedschaften -->
+        <section id="mitgliedschaften" class="page-section" data-id="mitgliedschaften">
+            <div class="section-content">
+                <h2>Mitgliedschaften</h2>
+                <p>Wenn du mehrmals in der Woche trainieren willst, ist eine Mitgliedschaft die beste Option für dich.</p>
+                
+                <div class="membership-grid">
+                    <!-- VIP Package -->
+                    <div class="membership-card">
+                        <div class="membership-header vip-header">
+                            <h3>VIP Package</h3>
+                        </div>
+                        <div class="membership-body">
+                            <div class="price">ab €90</div>
+                            <div class="details">Alle Kurse inklusive</div>
+                        </div>
+                    </div>
+
+                    <!-- Striking Package -->
+                    <div class="membership-card">
+                        <div class="membership-header striking-header">
+                            <h3>Striking Package</h3>
+                        </div>
+                        <div class="membership-body">
+                            <div class="price">ab €80</div>
+                            <div class="details">K1 - Muay Thai - Boxing</div>
+                        </div>
+                    </div>
+
+                    <!-- Boxing Package -->
+                    <div class="membership-card">
+                        <div class="membership-header boxing-header">
+                            <h3>Boxing Package</h3>
+                        </div>
+                        <div class="membership-body">
+                            <div class="price">ab €75</div>
+                            <div class="details">Boxing</div>
+                        </div>
+                    </div>
+
+                    <!-- Morning Package -->
+                    <div class="membership-card">
+                        <div class="membership-header morning-header">
+                            <h3>Morning Package</h3>
+                        </div>
+                        <div class="membership-body">
+                            <div class="price">ab €50</div>
+                            <div class="details">Alle Kurse bis 13 Uhr</div>
+                        </div>
+                    </div>
+
+                    <!-- Juniors Package -->
+                    <div class="membership-card">
+                        <div class="membership-header juniors-header">
+                            <h3>Juniors</h3>
+                        </div>
+                        <div class="membership-body">
+                            <div class="price">ab €65</div>
+                            <div class="details">
+                                Gruppe 1: 5-9 Jahre<br>
+                                Gruppe 2: 10-16 Jahre
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <p>Einschreibegebühr: €100 | Studierende & Junioren: €70</p>
+                    <p>Ein Probetraining ist jederzeit möglich und kostet €20 (inklusive Bandagen)</p>
+                    <p>Bei Vertragsabschluss wird dieser Betrag gutgeschrieben.</p>
+                </div>
+
+                <h2 class="pt-heading">Personal Training</h2>
+                <p>Gerne kannst du die Kosten mit einer weiteren Person teilen. Pro zusätzliche Person, erhöhen sich die kosten um 50%. Der Preis der Personal Trainings variiert je nach Coach.</p>
+
+                <div class="pt-grid">
+                     <!-- Einzelstunde -->
+                    <div class="pt-card">
+                        <div class="pt-header">
+                            <h3>Einzelstunde</h3>
+                        </div>
+                        <div class="pt-body">
+                            <div class="price">ab €49</div>
+                            <div class="details">€59 für Nicht-Mitglieder</div>
+                        </div>
+                    </div>
+
+                    <!-- 10er Block -->
+                    <div class="pt-card">
+                        <div class="pt-header">
+                            <h3>10er Block</h3>
+                        </div>
+                        <div class="pt-body">
+                            <div class="price">ab €390</div>
+                            <div class="details">€490 für Nicht-Mitglieder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Shop -->
+        <section id="shop" class="page-section">
+            <div class="section-content">
+                <h1>MMA VIENNA SHOP</h1>
+                <div class="shop-categories">
+                    <a href="tshirts.html" class="category-card">
+                        <div class="category-image">
+                            <img src="images/tshirt-category.jpg" alt="T-Shirts" onerror="this.src='https://images.unsplash.com/photo-1622519407650-3df9883f76a5?w=500&h=500&fit=crop'">
+                        </div>
+                        <div class="category-content">
+                            <h3>T-Shirts</h3>
+                            <span class="shop-button">Jetzt shoppen</span>
+                        </div>
+                    </a>
+                    
+                    <a href="hoodies.html" class="category-card">
+                        <div class="category-image">
+                            <img src="images/hoodie-category.jpg" alt="Hoodies" onerror="this.src='https://images.unsplash.com/photo-1608032364895-0da67af36cd2?w=500&h=500&fit=crop'">
+                        </div>
+                        <div class="category-content">
+                            <h3>Hoodies</h3>
+                            <span class="shop-button">Jetzt shoppen</span>
+                        </div>
+                    </a>
+                    
+                    <a href="accessories.html" class="category-card">
+                        <div class="category-image">
+                            <img src="images/accessories-category.jpg" alt="Accessoires" onerror="this.src='https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?w=500&h=500&fit=crop'">
+                        </div>
+                        <div class="category-content">
+                            <h3>Accessoires</h3>
+                            <span class="shop-button">Jetzt shoppen</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Footer / Kontakt -->
+        <section id="footer" class="page-section" data-id="footer">
+            <div class="section-content footer-content">
+                <h2>KONTAKT</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-block">
+                            <h3>Adresse</h3>
+                            <p>
+                                MMA Vienna<br>
+                                Favoritenstraße 54<br>
+                                1040 Wien<br>
+                                Österreich
+                            </p>
+                        </div>
+                        
+                        <div class="contact-block">
+                            <h3>Kontakt</h3>
+                            <p>
+                                <a href="tel:+43019711770" class="contact-link">
+                                    <i class="fas fa-phone"></i>
+                                    +43(0)19711770
+                                </a>
+                            </p>
+                            <p>
+                                <a href="mailto:office@mmavienna.com" class="contact-link">
+                                    <i class="fas fa-envelope"></i>
+                                    office@mmavienna.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MMAVienna/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mmavienna/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="legal-links">
+                        <a href="impressum.html">Impressum</a>
+                        <span class="separator">|</span>
+                        <a href="datenschutz.html">Datenschutz</a>
+                    </div>
+
+                    <p class="copyright">&copy; 2024 MMA Vienna</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

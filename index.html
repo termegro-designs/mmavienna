@@ -15,15 +15,18 @@
 <body>
 
     <nav class="side-nav">
+        <button id="nav-toggle-btn" class="nav-toggle-btn" aria-label="Navigation umschalten">
+            <i class="fas fa-chevron-left"></i> <!-- Icon für Einklappen -->
+        </button>
         <ul>
-            <li><a href="#hero" class="nav-link active" data-section="hero">START</a></li>
-            <li><a href="#angebot" class="nav-link" data-section="angebot">ANGEBOT</a></li>
-            <li><a href="#philosophie" class="nav-link" data-section="philosophie">PHILOSOPHIE</a></li>
-            <li><a href="#stundenplan" class="nav-link" data-section="stundenplan">STUNDENPLAN</a></li>
-            <li><a href="#trainer" class="nav-link" data-section="trainer">TRAINER</a></li>
-            <li><a href="#mitgliedschaften" class="nav-link" data-section="mitgliedschaften">MITGLIEDSCHAFTEN</a></li>
-            <li><a href="#kontakt" class="nav-link" data-section="kontakt">KONTAKT</a></li>
-            <li><a href="#shop" class="nav-link" data-section="shop">SHOP</a></li>
+            <li><a href="#hero" class="nav-link active" data-section="hero"><span>START</span></a></li>
+            <li><a href="#angebot" class="nav-link" data-section="angebot"><span>ANGEBOT</span></a></li>
+            <li><a href="#philosophie" class="nav-link" data-section="philosophie"><span>PHILOSOPHIE</span></a></li>
+            <li><a href="#stundenplan" class="nav-link" data-section="stundenplan"><span>STUNDENPLAN</span></a></li>
+            <li><a href="#trainer" class="nav-link" data-section="trainer"><span>TRAINER</span></a></li>
+            <li><a href="#mitgliedschaften" class="nav-link" data-section="mitgliedschaften"><span>MITGLIEDSCHAFTEN</span></a></li>
+            <li><a href="#kontakt" class="nav-link" data-section="kontakt"><span>KONTAKT</span></a></li>
+            <li><a href="#shop" class="nav-link" data-section="shop"><span>SHOP</span></a></li>
         </ul>
     </nav>
 
@@ -78,7 +81,7 @@
                     <!-- BJJ/Grappling Card -->
                     <div class="angebot-card">
                         <div class="angebot-image">
-                            <img src="images/bjjgrappling.png" alt="BJJ und Grappling Training">
+                            <img src="images/bjjgrapling.jpg" alt="BJJ und Grappling Training">
                         </div>
                         <div class="angebot-content">
                             <h3>BJJ & Grappling</h3>
@@ -704,92 +707,141 @@
         </section>
 
         <!-- Section 6: Shop -->
-        <section id="shop" class="page-section">
-            <div class="section-content">
-                <h1>MMA VIENNA SHOP</h1>
-                <div class="shop-categories">
-                    <a href="tshirts.html" class="category-card">
-                        <div class="category-image">
-                            <img src="images/tshirt-category.jpg" alt="T-Shirts" onerror="this.src='https://images.unsplash.com/photo-1622519407650-3df9883f76a5?w=500&h=500&fit=crop'">
-                        </div>
-                        <div class="category-content">
-                            <h3>T-Shirts</h3>
-                            <span class="shop-button">Jetzt shoppen</span>
-                        </div>
-                    </a>
-                    
-                    <a href="hoodies.html" class="category-card">
-                        <div class="category-image">
-                            <img src="images/hoodie-category.jpg" alt="Hoodies" onerror="this.src='https://images.unsplash.com/photo-1608032364895-0da67af36cd2?w=500&h=500&fit=crop'">
-                        </div>
-                        <div class="category-content">
-                            <h3>Hoodies</h3>
-                            <span class="shop-button">Jetzt shoppen</span>
-                        </div>
-                    </a>
-                    
-                    <a href="accessories.html" class="category-card">
-                        <div class="category-image">
-                            <img src="images/accessories-category.jpg" alt="Accessoires" onerror="this.src='https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?w=500&h=500&fit=crop'">
-                        </div>
-                        <div class="category-content">
-                            <h3>Accessoires</h3>
-                            <span class="shop-button">Jetzt shoppen</span>
-                        </div>
-                    </a>
+        <section id="shop" class="page-section" data-id="shop">
+            <div class="section-content shop-content">
+                <div class="shop-header">
+                    <h2>MMA VIENNA TRAININGSSETS</h2>
+                    <p class="shop-subtitle">Wähle ein Set aus, um die Details und Bilder anzuzeigen.</p>
                 </div>
+
+                <!-- Set Auswahl -->
+                <div class="set-selection-container">
+                    <!-- Weißes Set Auswahl -->
+                    <div class="set-selection-card" data-set="white">
+                        <img src="images/mma_vienna_shirt_white_front.png" alt="Vorschau Weißes Set" class="set-preview-image">
+                        <h3>Trainingsset - Weiß</h3>
+                        <p>€ 90,00</p>
+                    </div>
+                    <!-- Schwarzes Set Auswahl -->
+                    <div class="set-selection-card" data-set="black">
+                        <img src="images/mma_vienna_shirt_black_front.png" alt="Vorschau Schwarzes Set" class="set-preview-image">
+                        <h3>Trainingsset - Schwarz</h3>
+                        <p>€ 90,00</p>
+                    </div>
+                </div>
+
+                <!-- Modal / Lightbox (versteckt) -->
+                <div id="product-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="modal-close">&times;</span>
+                        <h3 id="modal-title">Trainingsset</h3>
+                        <div class="modal-gallery">
+                            <div class="gallery-main-image">
+                                <img id="modal-main-image" src="" alt="MMA Vienna Trainingsset - Hauptansicht">
+                            </div>
+                            <div class="gallery-thumbnails" id="modal-thumbnails">
+                                <!-- Thumbnails werden hier per JS eingefügt -->
+                            </div>
+                        </div>
+                        <div class="modal-description" id="modal-description">
+                            <!-- Beschreibung wird hier per JS eingefügt -->
+                            <p></p>
+                            <div class="product-features">
+                                 <div class="feature"><i class="fas fa-tshirt"></i><span>Atmungsaktiv</span></div>
+                                 <div class="feature"><i class="fas fa-wind"></i><span>Schnelltrocknend</span></div>
+                                 <div class="feature"><i class="fas fa-check-circle"></i><span>Strapazierfähig</span></div>
+                             </div>
+                            <div class="product-set-price"><span class="price-amount">€ 90,00</span></div>
+                            <div class="product-set-sizes"><span>Verfügbare Größen: S, M, L, XL</span></div>
+                            <div class="availability-info"><i class="fas fa-store"></i><span>Erhältlich nur vor Ort im MMA Vienna Studio</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datenspeicher für Set-Details (unsichtbar) -->
+                <div id="set-data" style="display: none;">
+                    <div data-set-id="white">
+                        <span data-image="images/mma_vienna_shirt_white_front.png"></span>
+                        <span data-image="images/mma_vienna_shirt_white_back.png"></span>
+                        <span data-image="images/mma_vienna_shorts_white_front.png"></span>
+                        <span data-image="images/mma_vienna_shirt_white_front.png"></span>
+                        <p data-description="Unser hochwertiges weißes Trainingsset: Atmungsaktives Funktionsshirt und bequeme Shorts im MMA Vienna Design."></p>
+                    </div>
+                    <div data-set-id="black">
+                        <span data-image="images/mma_vienna_shirt_black_front.png"></span>
+                        <span data-image="images/mma_vienna_shirt_black_back.png"></span>
+                        <span data-image="images/mma_vienna_shorts_black_front.png"></span>
+                        <span data-image="images/mma_vienna_shirt_black_front.png"></span>
+                        <p data-description="Unser hochwertiges schwarzes Trainingsset: Gleiche Qualität und Performance wie das weiße Set, in stylischem Schwarz."></p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Section 6: Footer / Kontakt -->
+        <!-- Section 7: Footer / Kontakt (Map Layout) -->
         <section id="footer" class="page-section" data-id="footer">
-            <div class="section-content footer-content">
-                <h2>KONTAKT</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <div class="contact-block">
-                            <h3>Adresse</h3>
+            <div class="section-content footer-content-map-layout">
+                <h2>Kontakt & Standort</h2>
+                <div class="contact-map-container">
+                    <!-- Linke Spalte: Karte -->
+                    <div class="contact-map">
+                        <!-- WICHTIG: Google Maps Einbettungscode hier einfügen -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.840517896755!2d16.36971881565059!3d48.1902669792278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079c96a5d06b%3A0x5b8b5f2e2b4e3b0d!2sFavoritenstra%C3%9Fe%2054%2C%201040%20Wien%2C%20Austria!5e0!3m2!1sen!2sde!4v1678886666666!5m2!1sen!2sde" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Rechte Spalte: Kontaktdaten -->
+                    <div class="contact-details-map-layout">
+                        <div class="contact-block-map">
+                            <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
                             <p>
                                 MMA Vienna<br>
                                 Favoritenstraße 54<br>
-                                1040 Wien<br>
-                                Österreich
+                                1040 Wien, Österreich
                             </p>
                         </div>
-                        
-                        <div class="contact-block">
-                            <h3>Kontakt</h3>
+                        <div class="contact-block-map">
+                            <h3><i class="fas fa-phone"></i> Telefon</h3>
                             <p>
-                                <a href="tel:+43019711770" class="contact-link">
-                                    <i class="fas fa-phone"></i>
-                                    +43(0)19711770
-                                </a>
-                            </p>
-                            <p>
-                                <a href="mailto:office@mmavienna.com" class="contact-link">
-                                    <i class="fas fa-envelope"></i>
-                                    office@mmavienna.com
-                                </a>
+                                <a href="tel:+43019711770" class="contact-link-map">+43 (0)197 11770</a>
                             </p>
                         </div>
+                         <div class="contact-block-map">
+                            <h3><i class="fas fa-envelope"></i> E-Mail</h3>
+                            <p>
+                                <a href="mailto:office@mmavienna.com" class="contact-link-map">office@mmavienna.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-block-map social-map">
+                            <h3><i class="fas fa-share-alt"></i> Folge uns</h3>
+                             <div class="social-links-map">
+                                <a href="https://www.facebook.com/MMAVienna/" target="_blank" class="social-link-map">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/mmavienna/" target="_blank" class="social-link-map">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/MMAVienna/" target="_blank" class="social-link">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/mmavienna/" target="_blank" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-
-                    <div class="legal-links">
+                <!-- Untere Zeile: Legal Links & Copyright -->
+                <div class="footer-bottom-map">
+                    <div class="legal-links-map">
                         <a href="impressum.html">Impressum</a>
                         <span class="separator">|</span>
                         <a href="datenschutz.html">Datenschutz</a>
                     </div>
-
-                    <p class="copyright">&copy; 2024 MMA Vienna</p>
+                    <p class="copyright-map">&copy; 2024 MMA Vienna</p>
                 </div>
             </div>
         </section>
